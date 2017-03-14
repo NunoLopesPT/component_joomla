@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="component" version="3.2.0" method="upgrade">
 
-	<name>Hello World!</name>
+	<name>COM_LISTS</name>
 	<!-- The following elements are optional and free of formatting constraints -->
-	<creationDate>December 2013</creationDate>
-	<author>John Doe</author>
-	<authorEmail>john.doe@example.org</authorEmail>
-	<authorUrl>http://www.example.org</authorUrl>
+	<creationDate>March 2017</creationDate>
+	<author>Nuno Lopes</author>
+	<authorEmail>nun0lopes@hotmail.com</authorEmail>
 	<copyright>Copyright Info</copyright>
 	<license>License Info</license>
 	<!--  The version string is recorded in the components table -->
 	<version>0.0.1</version>
 	<!-- The description is optional and defaults to the name -->
-	<description>Description of the Hello World component ...</description>
+	<description>a</description>
 
 	<update> <!-- Runs on update; New since J2.5 -->
 		<schemas>
@@ -26,12 +25,12 @@
 		in this section are copied from /site/ in the package -->
 	<files folder="site">
 		<filename>index.html</filename>
-		<filename>helloworld.php</filename>
+		<filename>lists.php</filename>
 	</files>
 
 	<administration>
 		<!-- Administration Menu Section -->
-		<menu link='index.php?option=com_helloworld'>Hello World!</menu>
+		<menu link='index.php?option=com_lists'>COM_LISTS_MENU</menu>
 		<!-- Administration Main File Copy Section -->
 		<!-- Note the folder attribute: This attribute describes the folder
 			to copy FROM in the package to install therefore files copied
@@ -39,10 +38,14 @@
 		<files folder="admin">
 			<!-- Admin Main File Copy Section -->
 			<filename>index.html</filename>
-			<filename>helloworld.php</filename>
+			<filename>lists.php</filename>
 			<!-- SQL files section -->
 			<folder>sql</folder>
 		</files>
+		<languages folder="admin/language">
+			<language tag="en-GB">en-GB/en-GB.com_lists.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_lists.sys.ini</language>
+		</languages>
 	</administration>
 
 </extension>
