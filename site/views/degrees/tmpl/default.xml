@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metadata>
-	<layout title="COM_LISTS_DEGREES_VIEW_DEFAULT_TITLE">
-		<message>COM_LISTS_DEGREES_VIEW_DEFAULT_DESC</message>
+	<layout title="COM_LISTS_HELLOWORLD_VIEW_DEFAULT_TITLE">
+		<message>COM_LISTS_HELLOWORLD_VIEW_DEFAULT_DESC</message>
 	</layout>
+	<fields
+			name="request"
+			addfieldpath="/administrator/components/lists/models/fields"
+			>
+		<fieldset name="request">
+			<field 	name="id"
+					type="list"
+					label="COM_LISTS_DEGREES_FIELD_GREETING_LABEL"
+					description="COM_LISTS_DEGREES_FIELD_GREETING_DESC"/>
+		</fieldset>
+	</fields>
 </metadata>

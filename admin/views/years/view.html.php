@@ -15,7 +15,7 @@ defined('_JEXEC') or die('Restricted access');
  *
  * @since  0.0.1
  */
-class ListsViewDegrees extends JViewLegacy
+class ListsViewYears extends JViewLegacy
 {
 	/**
 	 * Display the Hello World view
@@ -27,15 +27,15 @@ class ListsViewDegrees extends JViewLegacy
 	function display($tpl = null)
 	{
 		$app     = JFactory::getApplication();
-		$context = "lists.list.admin.degree";
+		$context = "lists.list.admin.year";
 
 		// Get data from the model
 		$this->items            = $this->get('Items');
 		$this->pagination       = $this->get('Pagination');
-		$this->filter_order     = $app->getUserStateFromRequest($context . 'filter_order', 'filter_order', 'degree', 'cmd');
+		$this->filter_order     = $app->getUserStateFromRequest($context . 'filter_order', 'filter_order', 'year', 'cmd');
 		$this->filter_order_Dir = $app->getUserStateFromRequest($context . 'filter_order_Dir', 'filter_order_Dir', 'asc', 'cmd');
-		$this->activeFilters    = $this->get('ActiveFilters');
-		$this->filterForm    = $this->get('FilterForm');
+		//$this->activeFilters    = $this->get('ActiveFilters');
+		//$this->filterForm    = $this->get('FilterForm');
 
 		if (count($errors = $this->get('Errors')))
 		{
@@ -58,7 +58,7 @@ class ListsViewDegrees extends JViewLegacy
 		$this->setDocument();
 	}
 
-	protected function addToolBar()
+		protected function addToolBar()
 	{
 		$title = JText::_('COM_HELLOWORLD_MANAGER_HELLOWORLDS');
  
@@ -68,9 +68,8 @@ class ListsViewDegrees extends JViewLegacy
 		}
 		
 		JToolbarHelper::title(JText::_('COM_HELLOWORLD_MANAGER_HELLOWORLDS'));
-		JToolbarHelper::addNew('degree.add');
-		JToolbarHelper::editList('degree.edit');
-		JToolbarHelper::deleteList('', 'degrees.delete');
+		JToolbarHelper::addNew('year.add');
+		JToolbarHelper::deleteList('', 'years.delete');
 	}
 
 	protected function setDocument() 

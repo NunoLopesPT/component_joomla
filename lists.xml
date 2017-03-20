@@ -9,10 +9,20 @@
 	<copyright>Copyright Info</copyright>
 	<license>License Info</license>
 	<!--  The version string is recorded in the components table -->
-	<version>0.0.4</version>
+	<version>0.0.7</version>
 	<!-- The description is optional and defaults to the name -->
 	<description>a</description>
 
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
 	<update> <!-- Runs on update; New since J2.5 -->
 		<schemas>
 			<schemapath type="mysql">sql/updates/mysql</schemapath>
@@ -42,8 +52,14 @@
 			<!-- Admin Main File Copy Section -->
 			<filename>index.html</filename>
 			<filename>lists.php</filename>
+			<filename>controller.php</filename>
 			<!-- SQL files section -->
 			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
 		</files>
 		<languages folder="admin/language">
 			<language tag="en-GB">en-GB/en-GB.com_lists.ini</language>
