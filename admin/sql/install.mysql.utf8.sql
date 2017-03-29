@@ -11,6 +11,7 @@ CREATE TABLE `#__degrees` (
 	DEFAULT CHARSET =utf8;
 
 CREATE TABLE `#__years` (
+	id int primary key NOT NULL AUTO_INCREMENT,
 	year int primary key,
 	published tinyint(4) DEFAULT '1'
 );

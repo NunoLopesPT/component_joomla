@@ -36,8 +36,11 @@ class ListsModelDegrees extends JModelItem
 	 *
 	 * @return  string  The message to be displayed to the user
 	 */
-	public function getMsg($id = 1)
-	{
+	public function getDegrees()
+	{	
+		$db    = JFactory::getDbo();
+		$query = $db->getQuery(true);
+		
 		if (!isset($this->message))
 		{
 			$jinput = JFactory::getApplication()->input;

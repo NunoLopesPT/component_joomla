@@ -27,7 +27,7 @@ class ListsViewDegrees extends JViewLegacy
 	public function display($tpl = null)
 	{
 		// Assign data to the view
-		$this->msg = $this->get('Msg');
+		$this->msg = $this->get('Degrees');
  
 		// Display the view
 		parent::display($tpl);
