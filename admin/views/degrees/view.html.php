@@ -34,8 +34,8 @@ class ListsViewDegrees extends JViewLegacy
 		$this->pagination       = $this->get('Pagination');
 		$this->filter_order     = $app->getUserStateFromRequest($context . 'filter_order', 'filter_order', 'degree', 'cmd');
 		$this->filter_order_Dir = $app->getUserStateFromRequest($context . 'filter_order_Dir', 'filter_order_Dir', 'asc', 'cmd');
-		$this->activeFilters    = $this->get('ActiveFilters');
-		$this->filterForm    = $this->get('FilterForm');
+		//$this->activeFilters    = $this->get('ActiveFilters');
+		//$this->filterForm    = $this->get('FilterForm');
 
 		if (count($errors = $this->get('Errors')))
 		{

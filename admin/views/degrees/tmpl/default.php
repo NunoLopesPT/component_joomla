@@ -27,7 +27,7 @@ $listDirn      = $this->escape($this->filter_order_Dir);
 	<div id="j-main-container" class="j-main-container">
 	<?php
 	// Search tools bar
-	echo JLayoutHelper::render('joomla.searchtools.default', array('view' => $this));
+	//echo JLayoutHelper::render('joomla.searchtools.default', array('view' => $this));
 	?>
 	<table class="table table-striped table-hover">
 		<thead>
