@@ -11,7 +11,7 @@
 defined('_JEXEC') or die('Restricted access');
  
 ?>
-<form action="<?php echo JRoute::_('index.php?option=com_lists&layout=edit&year=' . (int) $field->input); ?>"
+<form action="<?php echo JRoute::_('index.php?option=com_lists&layout=edit'); ?>"
     method="post" name="adminForm" id="adminForm">
     <div class="form-horizontal">
         <fieldset class="adminform">
@@ -28,6 +28,6 @@ defined('_JEXEC') or die('Restricted access');
             </div>
         </fieldset>
     </div>
-    <input type="hidden" name="task" value="year.edit" />
+    <input type="hidden" name="task" value="" />
     <?php echo JHtml::_('form.token'); ?>
 </form>

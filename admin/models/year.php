@@ -85,4 +85,12 @@ class ListsModelYear extends JModelAdmin
  
 		return $data;
 	}
+
+	public function addYear($year)
+	{
+		$data = new stdClass();
+		$data->year = $year;
+
+		$this->getDbo()->insertObject('#__years', $data);
+	}
 }

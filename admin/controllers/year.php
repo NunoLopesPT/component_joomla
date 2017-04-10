@@ -8,7 +8,7 @@
  */
 // No direct access to this file
 defined('_JEXEC') or die('Restricted access');
- 
+
 /**
  * HelloWorld Controller
  *
@@ -18,4 +18,16 @@ defined('_JEXEC') or die('Restricted access');
  */
 class ListsControllerYear extends JControllerForm
 {
+	public function save()
+	{
+		$input = $this->input->getInput('jform');
+
+		print_r($input['year']);
+
+		$model = $this->getModel();
+
+		$model->addYear($input['year']);
+
+		$this->setRedirect(JRoute::_('index.php?option=com_lists&view=years', false));
+	}
 }
