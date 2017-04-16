@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+        <field
+                name="id"
+                type="hidden"
+        />
+        <field name="id_degree"
+               type="Degrees"
+               label="Degree"
+               hint="ID of Student"
+               description="JFIELD_TITLE_DESC"
+               placeholder="Degree"
+               required="true"
+        />
+        <field name="year"
+               type="Years"
+               label="Year"
+               description="JFIELD_TITLE_DESC"
+               required="true"
+        />
+        <field
+                name="id"
+                type="number"
+                label="Number of Student"
+                hint="ID of Student"
+                description="COM_HELLOWORLD_HELLOWORLD_GREETING_DESC"
+                required="true"
+        />
+        <field
+                name="name"
+                type="text"
+                label="Name"
+                hint="Name"
+                description="COM_HELLOWORLD_HELLOWORLD_GREETING_DESC"
+                required="true"
+        />
+        <field
+                name="observation"
+                type="text"
+                hint="Observations"
+                label="Observations"
+                description="COM_HELLOWORLD_HELLOWORLD_GREETING_DESC"
+                required="true"
+        />
+    </fieldset>
+</form>
+

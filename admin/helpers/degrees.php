@@ -37,6 +37,11 @@ class DegreesHelper extends JHelperContent
 			'index.php?option=com_lists&view=years',
 			$vName == 'years'
 		);
+		JHtmlSidebar::addEntry(
+			JText::_('Students'),
+			'index.php?option=com_lists&view=students',
+			$vName == 'students'
+		);
 	}
 
 	/**

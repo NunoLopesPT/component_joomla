@@ -80,6 +80,7 @@ class ListsViewDegree extends JViewLegacy
  
 		JToolbarHelper::title($title, 'degree');
 		JToolbarHelper::save('degree.save');
+		JToolbarHelper::edit('degree.edit');
 		JToolbarHelper::cancel(
 			'degree.cancel',
 			$isNew ? 'JTOOLBAR_CANCEL' : 'JTOOLBAR_CLOSE'

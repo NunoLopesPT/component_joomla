@@ -9,10 +9,10 @@
  
 // No direct access
 defined('_JEXEC') or die('Restricted access');
- 
 ?>
-<form action="<?php echo JRoute::_('index.php?option=com_lists&layout=edit'); ?>"
-    method="post" name="adminForm" id="adminForm">
+
+<!-- In Tutorial they use this action but it has no effects -->
+<form action="<?php echo JRoute::_('index.php?option=com_lists&view=years&layout=edit')?>" method="post" name="adminForm" id="adminForm">
     <div class="form-horizontal">
         <fieldset class="adminform">
             <legend><?php echo JText::_('COM_HELLOWORLD_HELLOWORLD_DETAILS'); ?></legend>

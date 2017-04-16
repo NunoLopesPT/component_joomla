@@ -34,8 +34,6 @@ class ListsViewDegrees extends JViewLegacy
 		$this->pagination       = $this->get('Pagination');
 		$this->filter_order     = $app->getUserStateFromRequest($context . 'filter_order', 'filter_order', 'degree', 'cmd');
 		$this->filter_order_Dir = $app->getUserStateFromRequest($context . 'filter_order_Dir', 'filter_order_Dir', 'asc', 'cmd');
-		//$this->activeFilters    = $this->get('ActiveFilters');
-		//$this->filterForm    = $this->get('FilterForm');
 
 		if (count($errors = $this->get('Errors')))
 		{
@@ -43,7 +41,7 @@ class ListsViewDegrees extends JViewLegacy
 
 			return false;
 		}
-		
+
 		DegreesHelper::addSubmenu('degrees');
 		JHtml::addIncludePath(JPATH_COMPONENT . '/helpers/html');
 		$this->sidebar = JHtmlSidebar::render();
@@ -69,7 +67,6 @@ class ListsViewDegrees extends JViewLegacy
 		
 		JToolbarHelper::title(JText::_('COM_HELLOWORLD_MANAGER_HELLOWORLDS'));
 		JToolbarHelper::addNew('degree.add');
-		JToolbarHelper::editList('degree.edit');
 		JToolbarHelper::deleteList('', 'degrees.delete');
 	}
 

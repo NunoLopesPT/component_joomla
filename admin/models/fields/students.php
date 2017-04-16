@@ -17,13 +17,15 @@ JFormHelper::loadFieldClass('list');
  *
  * @since  0.0.1
  */
-class JFormFieldDegrees extends JFormFieldList {
+class JFormFieldStudents extends JFormFieldList
+{
 	/**
 	 * The field type.
 	 *
 	 * @var         string
 	 */
-	protected $type = 'Degrees';
+	protected $type = 'Students';
+
 
 	/**
 	 * Method to get a list of options for a list input.
@@ -31,24 +33,34 @@ class JFormFieldDegrees extends JFormFieldList {
 	 * @return  array  An array of JHtml options.
 	 */
 
-	public function getInput()
+
+	protected function getOptions()
 	{
-		$db = JFactory::getDBO();
-		$query = $db->getQuery(TRUE);
+		$db    = JFactory::getDBO();
+		$query = $db->getQuery(true);
 		$query->select('id, degree');
 		$query->from('#__degrees');
-		$db->setQuery((string)$query);
+		$db->setQuery((string) $query);
 		$rows = $db->setQuery($query)->loadObjectlist();
 
-		$html = '<select class="form-control" id="' . $this->id . '" name="' . $this->name . '">';
-
-		foreach ($rows as $row)
-		{
-			$html .= '<option value="' . $row->id . '">' . $row->degree . "</option>";
+		foreach($rows as $row){
+			$degrees[] = $row->degree;
 		}
+		$options = array_merge(parent::getOptions(), $degrees);
 
-		$html .= '</select>';
+		$db    = JFactory::getDBO();
+		$query = $db->getQuery(true);
+		$query->select('year');
+		$query->from('#__years');
+		$db->setQuery((string) $query);
+		$rows = $db->setQuery($query)->loadObjectlist();
 
-		return $html;
+		foreach($rows as $row){
+			$years[] = $row->year;
+		}
+		$options = array_merge(parent::getOptions(), $years);
+
+		// Merge any additional options in the XML definition.
+		return $options;
 	}
 }

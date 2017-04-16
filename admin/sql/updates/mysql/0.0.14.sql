@@ -1,6 +1,8 @@
+
 CREATE TABLE `#__students` (
-	id int primary key,
-	name varchar(50) NOT NULL,
-	id_degree varchar(50) NOT NULL,
-	year varchar(50) NOT NULL
+  id          INT PRIMARY KEY,
+  name        VARCHAR(50) NOT NULL,
+  id_degree   INT         NOT NULL,
+  year        INT         NOT NULL,
+  observation VARCHAR(255)
 );

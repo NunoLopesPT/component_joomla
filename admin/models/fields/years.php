@@ -17,13 +17,15 @@ JFormHelper::loadFieldClass('list');
  *
  * @since  0.0.1
  */
-class JFormFieldDegrees extends JFormFieldList {
+class JFormFieldYears extends JFormFieldList
+{
 	/**
 	 * The field type.
 	 *
 	 * @var         string
 	 */
-	protected $type = 'Degrees';
+	protected $type = 'Years';
+
 
 	/**
 	 * Method to get a list of options for a list input.
@@ -31,20 +33,21 @@ class JFormFieldDegrees extends JFormFieldList {
 	 * @return  array  An array of JHtml options.
 	 */
 
+
 	public function getInput()
 	{
 		$db = JFactory::getDBO();
 		$query = $db->getQuery(TRUE);
-		$query->select('id, degree');
-		$query->from('#__degrees');
+		$query->select('year');
+		$query->from('#__years');
 		$db->setQuery((string)$query);
 		$rows = $db->setQuery($query)->loadObjectlist();
 
-		$html = '<select class="form-control" id="' . $this->id . '" name="' . $this->name . '">';
+		$html = '<select class="form-control" id="' . $this->year . '" name="' . $this->name . '">';
 
 		foreach ($rows as $row)
 		{
-			$html .= '<option value="' . $row->id . '">' . $row->degree . "</option>";
+			$html .= '<option value="' . $row->year . '">' . $row->year . "</option>";
 		}
 
 		$html .= '</select>';

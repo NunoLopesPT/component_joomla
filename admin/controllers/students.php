@@ -16,22 +16,20 @@ defined('_JEXEC') or die('Restricted access');
  * @subpackage  com_helloworld
  * @since       0.0.9
  */
-class ListsControllerYear extends JControllerForm
+class ListsControllerStudents extends JControllerForm
 {
+
 	public function save()
 	{
 		$input = $this->input->getInput('jform');
 
 		$model = $this->getModel();
 
-		$year = $input['year'];
-		if ($model->addYear($year))
+		//print_r($input);
+
+		if ($model->addStudent($input))
 		{
-			$this->setRedirect(JRoute::_('index.php?option=com_lists&view=years', false), JText::_('Year added with success!'));
-		}
-		else
-		{
-			$this->setRedirect(JRoute::_('index.php?option=com_lists&view=year&layout=edit&year='.$year, false));
+			$this->setRedirect(JRoute::_('index.php?option=com_lists&view=students', false), JText::_('Year added with success!'));
 		}
 	}
 }
