@@ -59,13 +59,19 @@ JHtml::_('behavior.tabstate');
 				<thead>
 					<tr>
 						<th width="5%">
-							<?php echo JText::_('COM_HELLOWORLD_HELLOWORLDS_NAME'); ?>
+							<?php echo "ID"; ?>
 						</th>
-						<th width="90%">
-							<?php echo JText::_('COM_HELLOWORLD_PUBLISHED'); ?>
+						<th width="30%" class="text-center">
+							<?php echo "Name"; ?>
 						</th>
-						<th width="5%">
-							<?php echo JText::_('COM_HELLOWORLD_ID'); ?>
+						<th width="30%" class="text-center">
+							<?php echo "Degree"; ?>
+						</th>
+						<th width="30%" class="text-center">
+							<?php echo "Year"; ?>
+						</th>
+						<th width="5%" class="text-center">
+							<?php echo "Observation"; ?>
 						</th>
 					</tr>
 				</thead>
@@ -85,6 +91,12 @@ JHtml::_('behavior.tabstate');
 							</td>
 							<td align="center">
 								<?php echo $row->name; ?>
+							</td>
+							<td align="center">
+								<?php echo $row->id_degree; ?>
+							</td>
+							<td align="center">
+								<?php echo $row->year; ?>
 							</td>
 							<td align="center">
 								<?php echo $row->observation; ?>
