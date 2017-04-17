@@ -29,7 +29,7 @@ class ListsControllerStudents extends JControllerForm
 
 		if ($model->addStudent($input))
 		{
-			$this->setRedirect(JRoute::_('index.php?option=com_lists&view=students', false), JText::_('Year added with success!'));
+			$this->setRedirect(JRoute::_('index.php?option=com_lists&view=students', false), JText::_('Student added with success!'));
 		}
 	}
 }

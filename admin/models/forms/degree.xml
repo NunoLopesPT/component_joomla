@@ -8,8 +8,8 @@
 		<field
 				name="degree"
 				type="text"
-				label="COM_HELLOWORLD_HELLOWORLD_GREETING_LABEL"
-				description="COM_HELLOWORLD_HELLOWORLD_GREETING_DESC"
+				label="Degree"
+				description="Add your degree"
 				size="40"
 				class="inputbox"
 				default=""

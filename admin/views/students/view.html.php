@@ -71,7 +71,7 @@ class ListsViewStudents extends JViewLegacy {
 		$title = JText::_('Student List');
 
 		JToolbarHelper::title($title, 'helloworld');
-		JToolbarHelper::save('students.save', 'Save');
+		JToolbarHelper::save('students.save', 'Add new student');
 	}
 
 

@@ -28,6 +28,6 @@ defined('_JEXEC') or die('Restricted access');
             </div>
         </fieldset>
     </div>
-    <input type="hidden" name="task" value="degree.edit" />
+    <input type="hidden" name="task" value="" />
     <?php echo JHtml::_('form.token'); ?>
 </form>
