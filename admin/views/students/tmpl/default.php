@@ -23,7 +23,8 @@ JHtml::_('behavior.tabstate');
 			<?php echo $this->sidebar; ?>
 		</div>
 		<div class="col-md-10">
-			<div id="j-main-container" class="j-main-container">
+			<div id="j-main-container" class="j-main-container" style="padding: 10px">
+
 				<div class="form-horizontal">
 					<h3> Add new student</h3>
 					<div class="row">
@@ -39,17 +40,22 @@ JHtml::_('behavior.tabstate');
 					<br>
 					<div class="row">
 						<div class="col col-xs-4">
+							<?php print_r($this->form->getFieldset()['jform_id']->label); ?>
 							<?php print_r($this->form->getFieldset()['jform_id']->input); ?>
 						</div>
 						<div class="col col-xs-4">
+							<?php print_r($this->form->getFieldset()['jform_name']->label); ?>
 							<?php print_r($this->form->getFieldset()['jform_name']->input); ?>
 						</div>
 						<div class="col col-xs-4">
+							<?php print_r($this->form->getFieldset()['jform_observation']->label); ?>
 							<?php print_r($this->form->getFieldset()['jform_observation']->input); ?>
 						</div>
 					</div>
 				</div>
+				<small style="color: red">Fields with * are mandatory</small>
 			</div>
+			<br>
 			<div id="j-main-container" class="j-main-container">
 				<table class="table table-striped table-hover">
 					<thead>

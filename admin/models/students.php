@@ -113,7 +113,8 @@ class ListsModelStudents extends JModelAdmin
 			$this->getDbo()->insertObject('#__students', $data);
 		}
 		catch(Exception $e){
-			JError::raiseError( 4711, $e );
+			JError::raiseError( 4711, 'Duplicated entry for ID_Student' );
+
 			return false;
 		}
 

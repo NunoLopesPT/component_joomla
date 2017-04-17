@@ -22,8 +22,7 @@
         <field
                 name="id"
                 type="number"
-                label="Number of Student"
-                hint="ID of Student"
+                label="ID of Student"
                 description="COM_HELLOWORLD_HELLOWORLD_GREETING_DESC"
                 required="true"
         />
@@ -31,17 +30,14 @@
                 name="name"
                 type="text"
                 label="Name"
-                hint="Name"
                 description="COM_HELLOWORLD_HELLOWORLD_GREETING_DESC"
                 required="true"
         />
         <field
                 name="observation"
                 type="text"
-                hint="Observations"
                 label="Observations"
                 description="COM_HELLOWORLD_HELLOWORLD_GREETING_DESC"
-                required="true"
         />
     </fieldset>
 </form>
