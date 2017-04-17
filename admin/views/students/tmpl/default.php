@@ -33,17 +33,24 @@ defined('_JEXEC') or die('Restricted access');
 					</div>
 					<br>
 					<div class="row">
-						<div class="col col-xs-4">
+						<div class="col col-xs-3">
 							<?php print_r($this->form->getFieldset()['jform_id']->label); ?>
 							<?php print_r($this->form->getFieldset()['jform_id']->input); ?>
 						</div>
-						<div class="col col-xs-4">
+						<div class="col col-xs-3">
 							<?php print_r($this->form->getFieldset()['jform_name']->label); ?>
 							<?php print_r($this->form->getFieldset()['jform_name']->input); ?>
 						</div>
-						<div class="col col-xs-4">
+						<div class="col col-xs-3">
 							<?php print_r($this->form->getFieldset()['jform_observation']->label); ?>
 							<?php print_r($this->form->getFieldset()['jform_observation']->input); ?>
+						</div>
+						<div class="col col-xs-3">
+							<label> Action </label>
+							<br>
+							<button onclick="Joomla.submitbutton('students.save');" class="btn btn-success">
+								<span class="icon-save"></span>
+								Add new student</button>
 						</div>
 					</div>
 				</div>
