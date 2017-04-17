@@ -95,7 +95,7 @@ class ListsModelYear extends JModelAdmin
 			$this->getDbo()->insertObject('#__years', $data);
 		}
 		catch(Exception $e){
-			JError::raiseError( 4711, 'Error' );
+			JError::raiseError( 4711, 'This year already exist' );
 			return false;
 		}
 

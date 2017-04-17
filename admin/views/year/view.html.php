@@ -75,7 +75,7 @@ class ListsViewYear extends JViewLegacy
 		}
 		else
 		{
-			$title = JText::_('COM_HELLOWORLD_MANAGER_HELLOWORLD_EDIT');
+			$title = JText::_('Duplicated year');
 		}
  
 		JToolbarHelper::title($title, 'year');

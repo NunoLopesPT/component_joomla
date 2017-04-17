@@ -25,11 +25,16 @@ class ListsControllerStudents extends JControllerForm
 
 		$model = $this->getModel();
 
-		//print_r($input);
+		$id = $input['id'];
 
 		if ($model->addStudent($input))
 		{
-			$this->setRedirect(JRoute::_('index.php?option=com_lists&view=students', false), JText::_('Student added with success!'));
+			$this->setRedirect(JRoute::_('index.php?option=com_lists&view=students', false), JText::_
+			('Student added with success!'));
+		}
+		else
+		{
+			$this->setRedirect(JRoute::_('index.php?option=com_lists&view=students&id=' . $id, false));
 		}
 	}
 }

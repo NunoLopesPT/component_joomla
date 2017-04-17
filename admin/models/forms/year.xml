@@ -7,7 +7,6 @@
 				label="Year"
 				description="COM_HELLOWORLD_HELLOWORLD_GREETING_DESC"
 				size="40"
-				class="inputbox"
 				/>
 	</fieldset>
 </form>

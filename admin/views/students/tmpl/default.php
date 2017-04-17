@@ -10,13 +10,8 @@
 // No direct access
 defined('_JEXEC') or die('Restricted access');
 
-JHtml::_('formbehavior.chosen', 'select');
-JHtml::_('bootstrap.tooltip');
-JHtml::_('behavior.multiselect');
-JHtml::_('behavior.tabstate');
-
 ?>
-<form action="<?php echo JRoute::_('index.php?option=com_lists&layout=students&id=' . (int)$this->item->id); ?>"
+<form action="<?php echo JRoute::_('index.php?option=com_lists&view=students&layout=default'); ?>"
 	  method="post" name="adminForm" id="adminForm">
 	<div class="row">
 		<div id="j-sidebar-container" class="col-md-2">
@@ -24,7 +19,6 @@ JHtml::_('behavior.tabstate');
 		</div>
 		<div class="col-md-10">
 			<div id="j-main-container" class="j-main-container" style="padding: 10px">
-
 				<div class="form-horizontal">
 					<h3> Add new student</h3>
 					<div class="row">
