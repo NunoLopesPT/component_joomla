@@ -61,19 +61,19 @@ defined('_JEXEC') or die('Restricted access');
 				<table class="table table-striped table-hover">
 					<thead>
 					<tr>
-						<th width="5%">
+						<th width="10%">
 							<?php echo "ID"; ?>
 						</th>
-						<th width="30%" class="text-center">
+						<th width="40%" class="text-center">
 							<?php echo "Name"; ?>
 						</th>
-						<th width="30%" class="text-center">
-							<?php echo "ID Degree"; ?>
+						<th width="20%" class="text-center">
+							<?php echo "Degree"; ?>
 						</th>
-						<th width="30%" class="text-center">
+						<th width="10%" class="text-center">
 							<?php echo "Year"; ?>
 						</th>
-						<th width="5%" class="text-center">
+						<th width="10%" class="text-center">
 							<?php echo "Observation"; ?>
 						</th>
 					</tr>
@@ -95,7 +95,7 @@ defined('_JEXEC') or die('Restricted access');
 									<?php echo $row->name; ?>
 								</td>
 								<td align="center">
-									<?php echo $row->id_degree; ?>
+									<?php echo $row->degree; ?>
 								</td>
 								<td align="center">
 									<?php echo $row->year; ?>

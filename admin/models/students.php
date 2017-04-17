@@ -40,8 +40,10 @@ class ListsModelStudents extends JModelAdmin
 		$query = $db->getQuery(TRUE);
 
 		// Create the base select statement.
-		$query->select('*')
-			->from($db->quoteName('#__students'));
+		$query->select('s.id id, s.name name, d.degree degree, s.year year, s.observation observation')
+			->from($db->quoteName('#__students', "s"))
+			->join('left', $db->quoteName('#__degrees', 'd') . ' ON (' . $db->quoteName('s.id_degree') . ' = ' .
+				$db->quoteName('d.id') . ')');
 
 		return parent::_getList($query);
 	}
