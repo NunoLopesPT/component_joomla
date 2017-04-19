@@ -39,7 +39,7 @@ $listDirn      = $this->escape($this->filter_order_Dir);
 				<?php echo JHtml::_('grid.sort', 'Year', 'year', $listDirn, $listOrder); ?>
 			</th>
 			<th width="5%">
-				<?php echo JHtml::_('grid.sort', 'COM_HELLOWORLD_PUBLISHED', 'published', $listDirn, $listOrder); ?>
+				<?php echo JHtml::_('grid.sort', 'COM_LISTS_PUBLISHED', 'published', $listDirn, $listOrder); ?>
 			</th>
 		</tr>
 		</thead>

@@ -58,14 +58,14 @@ class ListsViewDegrees extends JViewLegacy
 
 	protected function addToolBar()
 	{
-		$title = JText::_('COM_HELLOWORLD_MANAGER_HELLOWORLDS');
+		$title = JText::_('COM_LISTS_MANAGER_LISTSS');
  
 		if ($this->pagination->total)
 		{
 			$title .= "<span style='font-size: 0.5em; vertical-align: middle;'>(" . $this->pagination->total . ")</span>";
 		}
 		
-		JToolbarHelper::title(JText::_('COM_HELLOWORLD_MANAGER_HELLOWORLDS'));
+		JToolbarHelper::title(JText::_('COM_LISTS_MANAGER_LISTSS'));
 		JToolbarHelper::addNew('degree.add');
 		JToolbarHelper::deleteList('', 'degrees.delete');
 	}
@@ -73,6 +73,6 @@ class ListsViewDegrees extends JViewLegacy
 	protected function setDocument() 
 	{
 		$document = JFactory::getDocument();
-		$document->setTitle(JText::_('COM_HELLOWORLD_ADMINISTRATION'));
+		$document->setTitle(JText::_('COM_LISTS_ADMINISTRATION'));
 	}
 }

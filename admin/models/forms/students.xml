@@ -19,21 +19,21 @@
                 name="id"
                 type="number"
                 label="ID of Student"
-                description="COM_HELLOWORLD_HELLOWORLD_GREETING_DESC"
+                description="COM_LISTS_LISTS_GREETING_DESC"
                 required="true"
         />
         <field
                 name="name"
                 type="text"
                 label="Name"
-                description="COM_HELLOWORLD_HELLOWORLD_GREETING_DESC"
+                description="COM_LISTS_LISTS_GREETING_DESC"
                 required="true"
         />
         <field
                 name="observation"
                 type="text"
                 label="Observations"
-                description="COM_HELLOWORLD_HELLOWORLD_GREETING_DESC"
+                description="COM_LISTS_LISTS_GREETING_DESC"
         />
     </fieldset>
 </form>

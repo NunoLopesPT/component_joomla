@@ -71,7 +71,7 @@ class ListsViewYear extends JViewLegacy
 
 		if ($isNew)
 		{
-			$title = JText::_('COM_HELLOWORLD_MANAGER_HELLOWORLD_NEW');
+			$title = JText::_('COM_LISTS_MANAGER_LISTS_NEW');
 		}
 		else
 		{

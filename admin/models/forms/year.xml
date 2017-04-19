@@ -5,7 +5,7 @@
 				name="year"
 				type="text"
 				label="Year"
-				description="COM_HELLOWORLD_HELLOWORLD_GREETING_DESC"
+				description="COM_LISTS_LISTS_GREETING_DESC"
 				size="40"
 				/>
 	</fieldset>

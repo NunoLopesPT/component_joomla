@@ -32,18 +32,18 @@ $listDirn = $this->escape($this->filter_order_Dir);
 				<table class="table table-striped table-hover">
 					<thead>
 					<tr>
-						<th width="1%"><?php echo JText::_('COM_HELLOWORLD_NUM'); ?></th>
+						<th width="1%"><?php echo JText::_('COM_LISTS_NUM'); ?></th>
 						<th width="2%">
 							<?php echo JHtml::_('grid.checkall'); ?>
 						</th>
 						<th width="90%">
-							<?php echo JHtml::_('grid.sort', 'COM_HELLOWORLD_HELLOWORLDS_NAME', 'degree', $listDirn, $listOrder); ?>
+							<?php echo JHtml::_('grid.sort', 'COM_LISTS_LISTSS_NAME', 'degree', $listDirn, $listOrder); ?>
 						</th>
 						<th width="5%">
-							<?php echo JHtml::_('grid.sort', 'COM_HELLOWORLD_PUBLISHED', 'published', $listDirn, $listOrder); ?>
+							<?php echo JHtml::_('grid.sort', 'COM_LISTS_PUBLISHED', 'published', $listDirn, $listOrder); ?>
 						</th>
 						<th width="2%">
-							<?php echo JHtml::_('grid.sort', 'COM_HELLOWORLD_ID', 'id', $listDirn, $listOrder); ?>
+							<?php echo JHtml::_('grid.sort', 'COM_LISTS_ID', 'id', $listDirn, $listOrder); ?>
 						</th>
 					</tr>
 					</thead>
@@ -68,7 +68,7 @@ $listDirn = $this->escape($this->filter_order_Dir);
 								</td>
 								<td>
 									<a href="<?php echo $link; ?>"
-									   title="<?php echo JText::_('COM_HELLOWORLD_EDIT_HELLOWORLD'); ?>">
+									   title="<?php echo JText::_('COM_LISTS_EDIT_LISTS'); ?>">
 										<?php echo $row->degree; ?>
 									</a>
 								</td>
