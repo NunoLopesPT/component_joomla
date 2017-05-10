@@ -9,7 +9,7 @@
 	<copyright>Copyright Info</copyright>
 	<license>License Info</license>
 	<!--  The version string is recorded in the components table -->
-	<version>0.0.15</version>
+	<version>0.0.1</version>
 	<!-- The description is optional and defaults to the name -->
 	<description>a</description>
 
@@ -66,5 +66,9 @@
 			<language tag="en-GB">en-GB/en-GB.com_lists.sys.ini</language>
 		</languages>
 	</administration>
+
+	<updateservers>
+        <server name="My Extension's Updates">127.0.0.1/collection.xml</server>
+	</updateservers>
 
 </extension>
