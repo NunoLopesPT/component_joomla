@@ -68,7 +68,7 @@
 	</administration>
 
 	<updateservers>
-        <server name="My Extension's Updates">127.0.0.1/collection.xml</server>
+        <server type="extension" name="My Extension's Updates">https://www.jah-tz.de/downloads/core/lists.xml</server>
 	</updateservers>
 
 </extension>
