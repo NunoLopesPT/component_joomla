@@ -68,7 +68,7 @@
 	</administration>
 
 	<updateservers>
-        <server type="extension" name="My Extension's Updates">https://www.jah-tz.de/downloads/core/lists.xml</server>
+        <server type="extension" name="My Extension's Updates">https://www.jah-tz.de/downloads/core/gsoc17/extension.xml</server>
 	</updateservers>
 
 </extension>
