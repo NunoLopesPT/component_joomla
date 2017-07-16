@@ -70,5 +70,6 @@
 	<updateservers>
         <server type="extension" name="My Extension's Updates">https://www.jah-tz.de/downloads/core/gsoc17/extension.xml</server>
 	</updateservers>
-
+    
+    <dlid prefix="dlid=" sufix="&amp;dummy=my.zip"/>
 </extension>
