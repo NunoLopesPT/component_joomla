@@ -66,7 +66,7 @@ class ListsViewDegree extends JViewLegacy
 		// Hide Joomla Administrator Main menu
 		$input->set('hidemainmenu', true);
  
-		$isNew = ($this->item->year == 0);
+		$isNew = ($this->item->degree == 0);
  
 		if ($isNew)
 		{
