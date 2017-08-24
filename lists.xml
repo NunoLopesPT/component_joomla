@@ -71,10 +71,5 @@
 	<updateservers>
         <server type="extension" name="My Extension's Updates">https://www.jah-tz.de/downloads/core/gsoc17/extension.xml</server>
 	</updateservers>
-	
-	<sha256>ce4442ee7fc90dd639c7c648b8a712995fa6500b34821a0cea83ccd72ef953b9</sha256>
-	<sha1>cab2aa2b93e985b3d3b96cc234b1fe620d7714e0</sha1>
-	<md5>e50bd76a0d69dab26a29da5abf3dc16c</md5>
-	
     <dlid prefix="dlid=" sufix="&amp;dummy=my.zip"/>
 </extension>
