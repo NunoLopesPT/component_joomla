@@ -12,8 +12,7 @@
 	<version>0.0.2</version>
 	<!-- The description is optional and defaults to the name -->
 	<description>a</description>
-	<changelogurl>http://keepachangelog.com/en/1.0.0/</changelogurl>
-	
+
 	<install>
 		<sql>
 			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
@@ -71,5 +70,6 @@
 	<updateservers>
         <server type="extension" name="My Extension's Updates">https://www.jah-tz.de/downloads/core/gsoc17/extension.xml</server>
 	</updateservers>
+    
     <dlid prefix="dlid=" sufix="&amp;dummy=my.zip"/>
 </extension>
